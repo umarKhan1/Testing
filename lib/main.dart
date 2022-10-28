@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'constants/text_strings.dart';
 import 'views/homeimports.dart';
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: TextStrings.flutterText,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const  HomeView(),
+      home:   HomeView(),
     );
   }
 }
